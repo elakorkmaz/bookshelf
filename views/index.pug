@@ -9,11 +9,10 @@ html.no-js(lang='en')
     link(type="text/css" rel="stylesheet" href='/css/bootstrap.min.css')
     link(type="text/css" rel="stylesheet" href='/css/main.css')
   body
-    nav.navbar.navbar-default
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
       .container-fluid
         .navbar-header
-          a.navbar-brand(href='/')
-            p.navbar-text Ela's Bookshelf
+          a.navbar-brand(href='/') Ela's bookshelf
 
     div.container
       .row
@@ -22,7 +21,7 @@ html.no-js(lang='en')
             a(target='_blank', href='/harry-potter-and-the-cursed-child')
               img(alt='', src='/img/harrypotter.jpg')
             .caption
-              h3 Harry Potter and the Cursed Child
+              h3 Harry Potter &amp; the cursed child
               h4 J.K. Rowling
         .col-sm-6.col-md-4
           .thumbnail
