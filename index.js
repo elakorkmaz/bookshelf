@@ -16,19 +16,19 @@ app.get('/books/', function(request, response) {
  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/harry-potter-and-the-cursed-child', function(request, response) {
+app.get('/books/harry-potter-and-the-cursed-child', function(request, response) {
  console.log('Requesting home page...');
  response.send(pug.renderFile(__dirname + '/views/books/harry-potter-and-the-cursed-child.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/born-to-run', function(request, response) {
+app.get('/books/born-to-run', function(request, response) {
  console.log('Requesting home page...');
  response.send(pug.renderFile(__dirname + '/views/books/born-to-run.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/clover-moon', function(request, response) {
+app.get('/books/clover-moon', function(request, response) {
  console.log('Requesting home page...');
  response.send(pug.renderFile(__dirname + '/views/books/clover-moon.pug', {}));
  // response.sendFile(__dirname + '/index.html');
