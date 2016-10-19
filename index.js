@@ -6,31 +6,31 @@ app.use(express.static(__dirname + '/'));
 
 app.get('/', function(request, response) {
  console.log('Requesting home page...');
- response.send(pug.renderFile(__dirname + '/index.pug', {}));
+ response.send(pug.renderFile(__dirname + '/views/index.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
 app.get('/books/', function(request, response) {
  console.log('Requesting home page...');
- response.send(pug.renderFile(__dirname + '/index.pug', {}));
+ response.send(pug.renderFile(__dirname + '/views/index.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/books/harrypotter', function(request, response) {
+app.get('/harry-potter-and-the-cursed-child', function(request, response) {
  console.log('Requesting home page...');
- response.send(pug.renderFile(__dirname + '/books/harrypotter.pug', {}));
+ response.send(pug.renderFile(__dirname + '/views/books/harry-potter-and-the-cursed-child.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/books/borntorun', function(request, response) {
+app.get('/born-to-run', function(request, response) {
  console.log('Requesting home page...');
- response.send(pug.renderFile(__dirname + '/books/borntorun.pug', {}));
+ response.send(pug.renderFile(__dirname + '/views/books/born-to-run.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
-app.get('/books/clovermoon', function(request, response) {
+app.get('/clover-moon', function(request, response) {
  console.log('Requesting home page...');
- response.send(pug.renderFile(__dirname + '/books/clovermoon.pug', {}));
+ response.send(pug.renderFile(__dirname + '/views/books/clover-moon.pug', {}));
  // response.sendFile(__dirname + '/index.html');
 });
 
