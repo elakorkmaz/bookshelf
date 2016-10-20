@@ -16,7 +16,7 @@ html.no-js(lang='en')
         each book in books
           .col-sm-6.col-md-4
             .thumbnail
-              a(href=book.slug)
+              a(href="books/" + book.slug)
                 img(src=book.imageUrl)
               .caption
                 h3= book.title
